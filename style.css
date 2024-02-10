@@ -330,7 +330,7 @@ h4 {
 .page5-top h2 {
    font-family: 'poppins';
    font-weight: 500;
-   font-size: 7vw;
+   font-size: 3vw;
    width: 96%;
    margin-left: 2%;
 }
@@ -365,6 +365,54 @@ h4 {
 
 
 /* swipper js ka code khatam */
+
+:root {
+   --scroller-size: 500vw;
+ }
+ 
+ .scroller-container {
+   padding-top: 2vw;
+   overflow: hidden;
+ }
+ .scroller {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: var(--scroller-size);
+   animation: icon-scroller 60s linear 0s normal infinite;
+   will-change: transform;
+ }
+ .scroller-img {
+   width: 150px;
+   /* max-height: 30px; */
+ }
+ 
+ @keyframes icon-scroller {
+   100% {
+     transform: translateX(calc(var(--scroller-size)*-0.5));
+   }
+ }
+ 
+ @media (max-width: 1200px) {
+   :root {
+     --scroller-size: 800vw;
+   }
+ }
+ @media (max-width: 800px) {
+   :root {
+     --scroller-size: 1000vw;
+   }
+   .scroller-img {
+     max-width: 130px;
+     max-height: 30px;
+   }
+ }
+ @media (max-width: 500px) {
+   :root {
+     --scroller-size: 1400vw;
+   }
+ }
+ 
 
 /* preloader walla */
 .preloader {
