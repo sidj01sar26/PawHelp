@@ -1,0 +1,440 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #ededed;
+    scroll-behavior: smooth;
+}
+
+.page-1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #dadada;
+}
+
+.cursor{
+    z-index: 9;
+   height: 7.5vw;
+   width: 7.5vw;
+   position: fixed;
+   background-color: #ff5f38;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transform: translate(-50% , -50%);
+   /* transition-delay: 0.001s; */
+}
+
+.cursor p{
+    font-family: 'poppins';
+    font-weight: 400; 
+}
+
+.page-1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute; 
+    /* to keep the video in bg we have given it postition absolute */
+}
+
+.page1-content{
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    padding-bottom: .5vh;
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ nav {
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 3vw;
+    width: 100%;
+    font-family: 'montserrat';
+    /* background: #000; */
+ }
+
+ @media screen and (max-width: 480px) {
+   nav h3 {
+      font-size: 4vw !important;
+      padding-top: 5.5vw;
+   }
+   nav h4{
+      display: none;
+   }
+   .page1-content h1 span {
+      padding-bottom: 5vw;
+      font-size: 21vw !important;
+   }
+ }
+
+ nav h3,h4{
+    font-size: 1.3vw;
+    font-weight: 400;
+ }
+
+ .page1-content h1 span {
+    font-family: 'poppins'; 
+    font-weight: 600;
+    font-size: 20vw;
+    color: #ededed;
+    display: inline-block;
+ }
+
+ .page-2 {
+    margin-top: 3vw;
+    height: 100vh;
+    width: 100%;
+    padding: 3vw;
+ }
+
+ .page2-upper{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1vw;
+ }
+ .page2-upper h3,h2{
+    font-size: 1.5vw;
+    font-weight: 400;
+ }
+
+ .page2-lower{
+    font-family: 'poppins';
+    padding-top: 1vw;
+    font-size: 3.5vw;
+    font-weight: 400;
+    text-align: left;
+ }
+
+ @media screen and (max-width: 480px) {
+   .page2-upper {
+      padding-bottom: 0 !important;
+   }
+   .page2-upper h3,h2{
+      margin-bottom: 0 !important;
+      font-weight: 600;
+   }
+ }
+
+ .page-3 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 3vw;
+ }
+
+ .page3-top{
+    text-align: center;
+ }
+
+ .page3-top h3{
+    font-size: 1.2vw;
+    padding-bottom: 1.3vw;
+    font-weight: 500;
+ }
+
+ .page3-top h3 span{
+    padding: 4px 8px;
+    font-size: 0.75vw;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: #fff;
+ }
+
+ .page3-top h2{
+    font-size: 3.8vw;
+    text-decoration: underline;
+ }
+
+ .page3-mid{
+    font-weight: 400;
+    margin-top: 10vw;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .page3-mid a{
+    text-decoration: none;
+ }
+
+ .page3-elem {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .page3-elem .card{
+    margin-top: 2vw;
+    height: 100%;
+    width: 32%;
+    position: relative;
+ }
+
+ .page3-elem .card img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+ }
+
+ .page3-elem .card:hover img{
+    opacity: 0;
+    transition: all linear 0.8s;
+ }
+
+ .page3-elem .card video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+ }
+
+ .page3-elem .card h2{
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'poppins';
+    font-weight: 400;
+ }
+
+ .page-4{
+    height: 100vh;
+    width: 100%;
+    padding: 10vw 4vw;
+ }
+
+ .page-4 h3 {
+    font-size: 2vw;
+    font-weight: 100;
+ }
+ .h3{
+    padding-bottom: 1.5vw;
+ }
+
+ .page-4 h2{
+    font-family: 'poppins';
+    padding-top: 1vw;
+    font-size: 3.5vw;
+    font-weight: 400;
+    text-align: left;
+ }
+
+ .page-5{
+    height: 33vw;
+    width: 100%;
+    position: relative;
+ }
+ .page5-top{
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #000 ;
+ }
+ .page5-top h2{
+    font-family: 'poppins';
+    font-weight: 500;
+    font-size: 7vw;
+    width: 96%;
+    margin-left: 2%;
+ }
+
+ .reelSwiper{
+    height: 60vh;
+    width: 100%;
+    position: relative;
+ }
+
+ /* swipper js ka code hai abbse */
+ .swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: -10%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 18%;
+    object-fit: cover;
+  }
+
+
+ /* swipper js ka code khatam */
+
+ /* preloader walla */
+ .preloader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #000;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+ }
+
+ .preloader h3{
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 1.7vw;
+    color: #fff;
+ }
+
+ .page-6{
+   height: 50vw;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .page-6 h3{
+   font-family: 'poppins';
+   font-size: 1vw;
+   font-weight: 400;
+   padding-bottom: 1vw;
+}
+
+/* .page-6 h3:hover{
+   text-decoration: underline;
+   animation-timing-function: linear;
+} */
+
+.page-6 h2{
+   font-size: 3vw;
+   /* background: #000;
+   color: #fff; */
+   color: #000;
+   text-decoration: underline;
+   padding: 0.6vw;
+   border-radius: 2vw;
+}
+
+ .footer{
+   height: 55vw;
+   width:100%;
+   background: #000;
+ }
+
+ .footer-upper , .footer-lower{
+   text-decoration: none;
+   padding: 2vw;
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+   /* align-items: center; */
+ }
+
+ .footer-upper .left h2{
+   font-family: 'poppins';
+   font-weight: 200;
+   padding-bottom: 1vw;
+ }
+
+ .footer-upper .left button h3 {
+   color: #fff;
+   border: 1px solid #ccc;
+    background: #000000;
+    padding: 10px 10px;
+   font-family: 'poppins';
+   font-weight: 200; 
+ }
+
+ .footer-upper .left button h3:hover{
+   color: #000000;
+   border: 1px  #000000;
+    background: #ffffff;
+ }
+
+ .footer-upper .right{
+   display: flex;
+   justify-content: space-between;
+   /* align-items: center; */
+   gap: 4vw;
+ }
+
+ .footer-upper .right ul li{
+   margin-right: 3vw;
+   padding: 0.2vw;
+   list-style-type: none;
+   font-size: 1vw;
+ }
+
+ .footer-lower{
+   margin-top: 13vw;
+ }
+
+ .footer-lower .left h2{
+   font-size: 1vw;
+   font-family: 'poppins';
+   font-weight: 200;
+ }
+
+ .footer-lower .right{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 3vw;
+   margin-right: 3vw;
+ }
+
+ .footer-lower .right h2{
+   font-size: 1vw;
+ }
+ .footer-text{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .footer-text h1 span{
+   font-family: 'poppins'; 
+    font-weight: 600;
+    font-size: 15vw;
+    color: #ededed;
+    display: inline-block;
+ }
+
+
+ /* media query */
+ /* @media screen and (min-width: 720px) {
+   .page3-elem {
+      height: 75vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column !important;
+      align-items: center;
+      justify-content: space-between;
+   }
+  
+ } */
