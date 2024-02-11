@@ -210,7 +210,7 @@ h4 {
 .page1-content h1 span {
   font-family: "poppins";
   font-weight: 600;
-  font-size: 20vw;
+  font-size: 19vw;
   color: #ededed;
   display: inline-block;
 }
@@ -220,10 +220,11 @@ h4 {
 }
 
 .about-SOS {
+  color: #f59c4f;
   display: flex;
   align-items: center;
   font-family: "poppins";
-  font-size: 4vw;
+  font-size: 2vw;
   font-weight: 700;
   justify-content: center;
   text-align: center;
@@ -1034,7 +1035,7 @@ label.light {
 
 .Neon-input-dragDrop {
   display: block;
-  width: 343px;
+  width: 200px;
   margin: 0 auto 25px auto;
   padding: 25px;
   color: #8d9499;
