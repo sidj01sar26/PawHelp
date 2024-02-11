@@ -76,3 +76,4 @@ time.from(".footer .footer-text h1 span", {
     stagger: 0.1,
     delay: 2
 })
+
