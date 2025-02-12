@@ -357,86 +357,6 @@ h4 {
   text-align: left;
 }
 
-.page-5 {
-  height: 33vw;
-  width: 100%;
-  position: relative;
-}
-
-.page5-top {
-  padding: 2vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #000;
-}
-
-.page5-top h2 {
-  font-family: "poppins";
-  font-weight: 500;
-  font-size: 3vw;
-  width: 96%;
-  margin-left: 2%;
-}
-
-.reelSwiper {
-  height: 60vh;
-  width: 100%;
-  position: relative;
-}
-
-
-:root {
-  --scroller-size: 500vw;
-}
-
-.scroller-container {
-  padding-top: 2vw;
-  overflow: hidden;
-}
-
-.scroller {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: var(--scroller-size);
-  animation: icon-scroller 60s linear 0s normal infinite;
-  will-change: transform;
-}
-
-.scroller-img {
-  width: 150px;
-  /* max-height: 30px; */
-}
-
-@keyframes icon-scroller {
-  100% {
-    transform: translateX(calc(var(--scroller-size) * -0.5));
-  }
-}
-
-@media (max-width: 1200px) {
-  :root {
-    --scroller-size: 800vw;
-  }
-}
-
-@media (max-width: 800px) {
-  :root {
-    --scroller-size: 1000vw;
-  }
-
-  .scroller-img {
-    max-width: 130px;
-    max-height: 30px;
-  }
-}
-
-@media (max-width: 500px) {
-  :root {
-    --scroller-size: 1400vw;
-  }
-}
 
 /* preloader walla */
 .preloader {
@@ -1089,4 +1009,113 @@ label.light {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+.page-5 {
+  height: 33vw;
+  width: 100%;
+  position: relative;
+}
+
+.page5-top {
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000;
+}
+
+.page5-top h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 3vw;
+  /* Default size */
+  width: 96%;
+  margin-left: 2%;
+}
+
+.reelSwiper {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+}
+
+:root {
+  --scroller-size: 300vw;
+}
+
+.scroller-container {
+  padding-top: 2vw;
+  overflow: hidden;
+}
+
+.scroller {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: var(--scroller-size);
+  animation: icon-scroller 20s linear infinite;
+  will-change: transform;
+}
+
+.scroller-img {
+  width: 150px;
+  object-fit: cover;
+}
+
+@keyframes icon-scroller {
+  100% {
+    transform: translateX(calc(var(--scroller-size) * -0.5));
+  }
+}
+
+/* Adjustments for different screen sizes */
+@media (max-width: 1200px) {
+  :root {
+    --scroller-size: 800vw;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --scroller-size: 1000vw;
+  }
+
+  .scroller-img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --scroller-size: 1200vw;
+  }
+
+  .page5-top h2 {
+    font-size: 5vw;
+    /* Increased title size */
+  }
+
+  .scroller-img {
+    width: 100px;
+    margin-bottom: 10px;
+    /* Margin-bottom ONLY in mobile view */
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --scroller-size: 1400vw;
+  }
+
+  .page5-top h2 {
+    font-size: 6vw;
+    /* Slightly larger title for very small screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .scroller-img {
+    display: none;
+  }
 }
