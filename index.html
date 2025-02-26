@@ -31,7 +31,7 @@
     </div>
 
 
-    <div class="main">
+    <div class="main" id="homepage">
         <div class="page-1">
             <div class="cursor">
                 <!-- <p>Chat BOT</p> -->
@@ -45,17 +45,17 @@
                     <div class="dropdown">
                         <button class="dropbtn" style="font-weight: bold;">Vision</button>
                         <div class="dropdown-content">
-                            <a href="#">Adoption</a>
-                            <a href="#">Pet Food</a>
-                            <a href="#">Pet Grooming</a>
-                            <a href="#">Other Services</a>
+                            <a href="#repo">Report</a>
+                            <a href="#bot">Seva-Bot</a>
+                            <a href="#care">Pet Care</a>
+                            <a href="#ngo">Other Services</a>
                         </div>
                     </div>
 
                 </nav>
-                <h1>
+                <p style="font-style:italic ;font-size:180px;">
                     <span>से</span><span>वा</span><span>कु</span><span>र्व</span><span>न्</span><span>तु</span>
-                </h1>
+                </p>
 
 
             </div>
@@ -75,7 +75,7 @@
 
         <!-- Forms -->
 
-        <div class="row">
+        <div class="row" id="repo">
             <div class="col-md-12">
                 <form action="index.html" method="post">
                     <h1 style="font-weight: bold; font-size: x-large;">Report an Accident</h1>
@@ -127,9 +127,9 @@
 
         <!-- Forms -->
 
-
-        <section class="dark">
-            =<div class="container py-4">
+        <section id="serv"></section>
+        <section class="dark" id="bot">
+            <div class="container py-6">
                 <h1 class="h1 text-center" id="pageHeaderTitle">Quick health assistance for your pets</h1>
 
                 <article class="postcard dark blue">
@@ -160,7 +160,7 @@
 
                 <br><br>
 
-                <article class="postcard dark red">
+                <article class="postcard dark red" id="care">
                     <a class="postcard__img_link">
                         <img class="postcard__img" src="assets/Vet.jpg" alt="Image Title" />
                     </a>
@@ -222,14 +222,14 @@
                 <br><br>
 
                 <!-- Future Scope Section -->
-                <article class="postcard dark green">
+                <article class="postcard dark green" id="ngo">
                     <a class="postcard__img_link" href="#">
                         <img class="postcard__img"
                             src="https://img.freepik.com/premium-photo/golden-retriever-dog-wearing-futuristic-goggles-neonlit-setting-concept-pet-technology-canine-fashion-scifi-animals-futuristic-pets_981050-22593.jpg"
                             alt="Future Scope" />
                     </a>
                     <div class="postcard__text">
-                        <h1 class="postcard__title green"><a href="#">Future Scope</a></h1>
+                        <h1 class="postcard__title green">Future Scope</h1>
 
                         <div class="postcard__bar"></div>
                         <div class="postcard__preview-txt">
@@ -260,7 +260,6 @@
                             <img class="scroller-img" src="assets/Ngo6.png" />
                             <img class="scroller-img" src="assets/Ngo7.png" />
                             <img class="scroller-img" src="assets/Ngo8.png" />
-
                             <img class="scroller-img" src="assets/Ngo1.jpeg" />
                             <img class="scroller-img" src="assets/Ngo2.png" />
                             <img class="scroller-img" src="assets/Ngo3.png" />
@@ -283,17 +282,25 @@
                     <div class="wave" id="wave4"></div>
                 </div>
                 <ul class="social_icon">
-                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <!-- <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li> -->
+                    <!-- <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li> -->
+                    <li>
+                        <a href="https://www.linkedin.com/in/siddharth-joisar/" target="_blank"><ion-icon
+                                name="logo-linkedin"></ion-icon></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/sidj01sar26" target="_blank"><ion-icon
+                                name="logo-github"></ion-icon></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/_siddharth.26_/" target="_blank"><ion-icon
+                                name="logo-instagram"></ion-icon></a>
+                    </li>
                 </ul>
 
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
+                    <li><a href="#homepage">Home</a></li>
+                    <li><a href="#serv">Services</a></li>
                 </ul>
                 <p>&copy 2025 | All Rights Reserved</p>
             </footer>
@@ -333,8 +340,8 @@
     </script> -->
 
     <body>
-        <button id="dropdownDividerButton">Toggle</button>
-        <div id="dropdownDivider" class="hidden">Dropdown Content</div>
+        <button id="dropdownDividerButton"></button>
+        <div id="dropdownDivider" class="hidden"></div>
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
