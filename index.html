@@ -321,7 +321,7 @@
         crossorigin="anonymous"></script>
     <script src="/script.js"></script>
 
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             const button = document.getElementById("dropdownDividerButton");
             const dropdown = document.getElementById("dropdownDivider");
@@ -330,7 +330,23 @@
                 dropdown.classList.toggle("hidden");
             });
         });
-    </script>
+    </script> -->
+
+    <body>
+        <button id="dropdownDividerButton">Toggle</button>
+        <div id="dropdownDivider" class="hidden">Dropdown Content</div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const button = document.getElementById("dropdownDividerButton");
+                const dropdown = document.getElementById("dropdownDivider");
+
+                button.addEventListener("click", function () {
+                    dropdown.classList.toggle("hidden");
+                });
+            });
+        </script>
+    </body>
 
 
     <script src="https://cdn.tailwindcss.com"></script>
