@@ -127,7 +127,7 @@ export default router;
 
 ---
 
-## 🔗 **API Endpoints & Documentation**  
+## 🔗 **API Endpoints**  
 
 ### 🔑 **Authentication (JWT-based)**  
 
