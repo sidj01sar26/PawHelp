@@ -37,19 +37,19 @@ To enhance accessibility, **OpenStreetMap & Overpass API** integration enables *
 
 ### 🏠 **User Authentication (Sign In & Sign Up)**  
 
-![Home Page](https://via.placeholder.com/1200x600)  
+<img src="ss/auth.png" width="710px">
 
 > Secure authentication system built with **JWT**, ensuring encrypted user data.
 
 ### 🤖 **SEVA BOT – AI Chatbot Interface**  
 
-![SEVA BOT](https://via.placeholder.com/1200x600)  
+<img src="ss/bot.png" width="770px"> 
 
 > Powered by **Google Gemini API**, allowing users to **ask pet-related questions via text & images**.
 
 ### 📍 **Clinic Locator – OpenStreetMap Integration**  
 
-![Clinic Locator](https://via.placeholder.com/1200x600)  
+<img src="ss/clinic.png" width="730px">
 
 > Displays nearby **veterinary clinics**, reducing search time by **30%** with real-time mapping.
 
